@@ -1,0 +1,68 @@
+.container {
+  width: 70%;
+  margin: 0px auto; }
+
+@keyframes graph-fill {
+  0% {
+    width: 0; } }
+
+@-webkit-keyframes graph-fill {
+  0% {
+    width: 0; } }
+
+@-moz-keyframes graph-fill {
+  0% {
+    width: 0; } }
+
+@-o-keyframes graph-fill {
+  0% {
+    width: 0; } }
+
+.bargraph li {
+  list-style: none; }
+  .bargraph li .bar-wrap {
+    margin-bottom: 13px;
+    background-color: #f4f2f2;
+    border: 1px solid #f4f4f4;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -o-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px; }
+  .bargraph li .graph-fill {
+    height: 15px;
+    display: block;
+    background-color: #000;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -o-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    width: 0px;
+    animation: graph-fill 1s;
+    -webkit-animation: graph-fill 1s;
+    -moz-animation: graph-fill 1s;
+    -o-animation: graph-fill 1s; }
+  .bargraph li span {
+    position: relative; }
+
+.bargraph li span strong {
+  position: absolute;
+  right: -0px;
+  top: -35px;
+  padding: 4px 7px !important;
+  background-color: #333;
+  color: #fff;
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: 200;
+  display: block; }
+
+.bargraph li span strong:after {
+  border-color: #333 transparent;
+  border-style: solid;
+  border-width: 5px 5px 0;
+  bottom: -5px;
+  content: "";
+  display: block;
+  left: 35%;
+  position: absolute;
+  width: 0; }

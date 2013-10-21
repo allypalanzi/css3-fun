@@ -1,0 +1,28 @@
+.page {
+  float: right;
+  width: 100%;
+  transition: width 0.3s ease; }
+
+.slide-nav {
+  background: #f4f4f4;
+  height: 100%;
+  position: fixed;
+  overflow-y: auto;
+  top: 0;
+  width: 0;
+  transition: width 0.3s ease; }
+  .slide-nav a {
+    display: block; }
+
+.close-menu {
+  display: none; }
+
+.slide-nav:target {
+  width: 20%; }
+
+.slide-nav:target + .page {
+  width: 80%; }
+  .slide-nav:target + .page .open-menu {
+    display: none; }
+  .slide-nav:target + .page .close-menu {
+    display: block; }
